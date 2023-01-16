@@ -1,5 +1,23 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+
+<script>
+export default {
+  // state
+  data() {
+    return {
+      count: 0
+    }
+  },
+  // actions
+  methods: {
+    increment() {
+      this.count++
+    }
+  }
+}
+</script>
+
 </script>
 
 <template>

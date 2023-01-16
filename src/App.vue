@@ -6,10 +6,19 @@ import { RouterLink, RouterView } from 'vue-router'
     
     <div class="quiz-container">
      <h1>Geo-Quiz!</h1>
-      <button>North America</button>
-      <button>Africa</button>
-      <button>Europe</button>
-      <button>South America</button>
+      <button>North America 
+      <p>NA pic</p>
+      </button>
+      <button>
+      Africa
+      <p>A pic</p>
+      </button>
+      <button>Europe
+      <p>E pic</p>
+      </button>
+      <button>South America
+      <p>SA pic</p>
+      </button>
     </div>
 </template>
 
@@ -35,7 +44,9 @@ header {
 button {
   padding: 10px;
   width: 100px;
+  margin: 5px;
   background-color: teal;
+  
 }
 
 .logo {
@@ -79,11 +90,6 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
 
   nav {
     text-align: left;

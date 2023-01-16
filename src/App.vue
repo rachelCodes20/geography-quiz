@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-    <h1>Geo-Quiz!</h1>
-    <div class="wrapper">
+    
+    <div class="quiz-container">
+     <h1>Geo-Quiz!</h1>
       <button>North America</button>
       <button>Africa</button>
       <button>Europe</button>
@@ -15,15 +14,28 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
+body {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
 
+.app {
+  text-align: center;
+}
+
+.quiz-container {
+  text-align: center;
+}
+
 button {
-padding: 10px;
-width: 100px;
-background-color: teal;
+  padding: 10px;
+  width: 100px;
+  background-color: teal;
 }
 
 .logo {

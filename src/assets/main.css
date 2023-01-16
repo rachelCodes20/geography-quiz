@@ -1,5 +1,5 @@
 @import './base.css';
-
+/* 
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -13,7 +13,7 @@ a,
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
-}
+} */
 
 @media (hover: hover) {
   a:hover {
@@ -21,15 +21,13 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 430px) {
   body {
     display: flex;
     place-items: center;
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+   
   }
 }

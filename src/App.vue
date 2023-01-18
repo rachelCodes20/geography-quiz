@@ -1,22 +1,13 @@
-<script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-
-<script>
+import SouthAmerica from './components/SouthAmerica
+<script >
 export default {
-  // state
   data() {
-    return {
-      count: 0
-    }
-  },
-  // actions
-  methods: {
-    increment() {
-      this.count++
-    }
-  }
+	  return {
+    	SAQuestion: 'What is the Northern most country in South America?'
+  	}
+	}
 }
-</script>
 
 </script>
 
@@ -34,9 +25,10 @@ export default {
       <button>Europe
       <p>E pic</p>
       </button>
-      <button>South America
-      <p>SA pic</p>
+      <button @click="counter++">South America
+      <p>  SA pic</p>
       </button>
+   {{SAQuestion}}
     </div>
 </template>
 

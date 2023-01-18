@@ -1,13 +1,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import SouthAmerica from './components/SouthAmerica
 <script >
-export default {
-  data() {
-	  return {
-    	SAQuestion: 'What is the Northern most country in South America?'
-  	}
-	}
-}
+
 
 </script>
 
@@ -26,9 +20,9 @@ export default {
       <p>E pic</p>
       </button>
       <button @click="counter++">South America
-      <p>  SA pic</p>
+      <router-link to="/SouthAmerica"><p> SA pic</p></router-link>
       </button>
-   {{SAQuestion}}
+
     </div>
 </template>
 
